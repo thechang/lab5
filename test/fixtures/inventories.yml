@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  product_id: 1
+  previous_balance: 1
+  new_balance: 1
+  future_balance: 1
+
+two:
+  id: 1
+  product_id: 1
+  previous_balance: 1
+  new_balance: 1
+  future_balance: 1

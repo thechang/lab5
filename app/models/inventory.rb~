@@ -1,0 +1,17 @@
+class Inventory < ActiveRecord::Base
+    def before_create (products)
+	id = product.id
+	product_id = product.product_id
+	previous_balance = 0 
+	new_balance = product.amount 
+	future_balance = product.amount + product.projection 
+    end
+    def before_modifying (products)
+	previous_balance = product.new_balance 
+	new_balance = product.amount 
+	future_balance = product.amount + product.projection
+    end
+    def before_delete (products)
+	delete from inventory where inventory.id=product.id
+    end
+end
